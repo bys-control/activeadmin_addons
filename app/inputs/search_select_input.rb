@@ -4,6 +4,7 @@ class SearchSelectInput < Formtastic::Inputs::StringInput
     opts = {}
     opts[:class] = ['select2-ajax'].concat([@options[:class]] || []).join(' ')
     opts["data-fields"] = (@options[:fields] || []).to_json
+    opts["data-click_selector_refresh_select2"] = @options[:click_selector_refresh_select2] || ".active_admin_addons_refresh_select2"
     opts["data-url"] = @options[:url] || ""
     opts["data-display_name"] = @options[:display_name] || "name"
     opts["data-minimum_input_length"] = @options[:minimum_input_length] || 1

@@ -286,6 +286,3 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers (= 2.6.1)
   sqlite3
-
-BUNDLED WITH
-   1.10.6

@@ -7,6 +7,11 @@ $(function() {
 
   $(document).on('has_many_add:after', setupSelect2);
 
+
+  $(document).on("click", '.active_admin_addons_refresh_select2', function() {
+    setupSelect2();
+   });
+
   function setupSelect2() {
     $('.select2-tags').each(function(i, el) {
       $(el).select2({
